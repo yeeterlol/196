@@ -12,10 +12,16 @@
 */
 import React from "react"
 import blahaj from "../imgs/blahaj.png"
+import spronkus from "../imgs/spronkus.png"
 
+const randomization = Math.random()
+const spronkusOrShonk = randomization > 0.5 ? "spronkus" : "shonk"
+
+console.log(spronkusOrShonk)
 const styles = {
-  backgroundImage: `url(${blahaj})`,
+  backgroundImage: spronkusOrShonk === "spronkus" ? `url(${spronkus})` : `url(${blahaj})`,
   backgroundPosition: "center"
+  
 }
 
 
