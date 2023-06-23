@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 
+no web font converter works with this shit
+*/
+@font-face {
+  font-family: SillyCats;
+  src: url("FOTRodinProUB.otf") format("opentype");
+}
+
+body {
+  background-color: #212738;
+  
+}
+
+.main-font {
+  font-family: SillyCats;
+  text-shadow: 0px 6px 0px black;
+}
+
+
+
+/* 
+ty lil gay person
+https://fossheim.io/writing/posts/css-text-gradient/
+for stealing your code hehehehehhehe >:3
+*/
+.gradient-text {
+  position: relative;
+  display: inline-block;
+  background-color: red;
+  background-image: linear-gradient(
+    rgba(91, 206, 250, 1) 29.16666567325592%,
+    rgba(245, 169, 184, 1) 47.39583432674408%,
+    rgba(254, 254, 255, 1) 61.97916865348816%,
+    rgba(245, 169, 184, 1) 78.125%
+  );
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  text-shadow: none !important;
+}
+
+.gradient-text::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  text-shadow: 0px 6px 0px black !important;
+}
