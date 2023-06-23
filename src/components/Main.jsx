@@ -10,16 +10,25 @@
           </button>
         </div>
 */
+import React from "react"
+import blahaj from "../imgs/blahaj.png"
+
+const styles = {
+  backgroundImage: `url(${blahaj})`,
+  backgroundPosition: "center"
+}
 
 
-function Main() {
-    return (
+
+function Main(props) {
+  return (
       <>
         <div className="text-white flex h-screen flex-col justify-center items-center gap-5">
-          <h1 className='text-8xl font-bold text-center main-font font-border stroke-black'>
+          <h1 className='text-8xl font-bold text-center main-font' style={styles}>
             THE<br></br> <span class="gradient-text" data-text="196">196</span> <br></br>MUSEUM
           </h1>
           <button
+                onClick={props.func}
                 className="rounded-md bg-indigo-600 px-64 py-5 text-2xl font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             >
                 Enter
