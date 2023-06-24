@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+/* 
+no web font converter works with this shit
+*/
 @font-face {
   font-family: SillyCats;
   src: url("FOTRodinProUB.otf") format("opentype");
@@ -9,6 +12,7 @@
 
 body {
   background-color: #212738;
+  
 }
 
 .main-font {
@@ -16,10 +20,13 @@ body {
   text-shadow: 0px 6px 0px black;
 }
 
-.say-gex {
-  font-family: SillyCats;
-}
 
+
+/* 
+ty lil gay person
+https://fossheim.io/writing/posts/css-text-gradient/
+for stealing your code hehehehehhehe >:3
+*/
 .gradient-text {
   position: relative;
   display: inline-block;
@@ -33,7 +40,7 @@ body {
   background-size: 100%;
   background-repeat: repeat;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent; 
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
   text-shadow: none !important;

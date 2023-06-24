@@ -17,10 +17,14 @@ import spronkus from "../imgs/spronkus.png"
 const randomization = Math.random()
 const spronkusOrShonk = randomization > 0.5 ? "spronkus" : "shonk"
 
+console.log(spronkusOrShonk)
 const styles = {
   backgroundImage: spronkusOrShonk === "spronkus" ? `url(${spronkus})` : `url(${blahaj})`,
   backgroundPosition: "center"
+  
 }
+
+
 
 function Main(props) {
   return (
