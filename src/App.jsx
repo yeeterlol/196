@@ -25,7 +25,7 @@ function App() {
         color 
         ?
         <div>
-            <Museum />
+            <Museum func={setMusuem}/>
         </div>     
         :
         <>
