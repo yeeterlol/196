@@ -11,12 +11,10 @@ import Footer from "./components/Footer"
 
 
 function App() {
-  const [color, setColor] = React.useState("");
+  const [color, setColor] = React.useState(false);
 
   function setMusuem() {
-    console.log("toggled")
     setColor(prevState => !prevState);
-    console.log(isInMusuem)
   }
 
   return (
